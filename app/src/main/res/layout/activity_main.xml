@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#30D5B5"
+    tools:context="com.example.tngp17_001.homework3.MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/tapper"
+        android:adjustViewBounds="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom|center"
+        >
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edit_text_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:hint="@string/how_many_tap_to_win"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <ImageButton
+            android:id="@+id/button_play"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playbtn"
+            android:background="@android:color/transparent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>
