@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class SecondActivity extends Activity implements View.OnClickListener {
-    int input = 0;
+    int input;
     int count = 0;
     ImageButton buttonCoin;
     TextView tvDisplay;
@@ -32,6 +32,7 @@ public class SecondActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if(count >= input){
             Intent intent = new Intent(this, MainActivity.class);
+            finish();
             startActivity(intent);
         }else{
             tvDisplay.setText(++count+"");
